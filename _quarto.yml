@@ -54,12 +54,12 @@ csl: include/apa.csl
 format:
   html:
     theme:
-      light:
-      - yeti
-      - include/light.scss
       dark:
       - darkly
       - include/dark.scss
+      light:
+      - yeti
+      - include/light.scss
     code-link: true
     code-fold: true
     code-line-numbers: true
