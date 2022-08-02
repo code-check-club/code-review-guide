@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+$link-color: #248CFC;
+
+/*-- scss:rules --*/
+.dark-mode,
+.dark-light .cell-output-display figure,
+.dark-light .cell-output-display img
+{ display: none; }
+
+.light-mode,
+.dark-light .cell-output-display + .cell-output-display figure ,
+.dark-light .cell-output-display + .cell-output-display img
+{ display: block; }
+
+:root {
+  --red: #ED5564;
+  --orange: #E49E7A;
+  --yellow: #FFCE54;
+  --green: #A0D568;
+  --blue: #4FC1E8;
+  --purple: #AC92EB
+}

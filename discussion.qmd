@@ -1,0 +1,16 @@
+# Discussion
+
+## Structural barriers
+
+- Funders and journals don’t encourage/enforce it
+- Universities/PIs don’t budget time and resources for it
+- Reviewers sometimes being discouraged by editors in code checking
+- Structural barriers in NON--WEIRD countries: no financial resources to attend courses → self-taught how to program; English is not a mother language —> self-taught (tutorials are usually in English)
+
+## Social barriers
+
+- Fear of judgment
+
+
+## How to set up a code check club 
+

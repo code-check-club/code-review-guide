@@ -1,0 +1,80 @@
+project:
+  type: book
+  output-dir: docs
+  output-file: "code-check-guide"
+  resources:
+  - "images/*"
+  - "data/*"
+
+book:
+  title: "Code Check Guide"
+  author: "Code Check Guide Collective"
+  description: "Beguinners' guide to checking code and preparing your code to be checked"
+  chapters:
+    - index.qmd
+    - part: "Topics"
+      chapters:
+      - naming.qmd
+      - comments.qmd
+      - unit-tests.qmd
+    - part: "Checklists"
+      chapters:
+      - checklist-coder.qmd
+      - checklist-reviewer.qmd
+    - discussion.qmd
+  cover-image: images/code-review-guide.png
+  image: images/code-review-guide.png
+  fav-icon: images/logos/favicon.ico
+  #cookie-consent: true
+  #google-analytics: "G-6NP3MF25W3"
+  page-navigation: true
+  search: true
+  comments:
+    hypothesis:
+      theme: clean
+      openSidebar: false
+  repo-url: https://github.com/code-check-club/code-check-guide
+  repo-branch: master
+  repo-actions: [edit, issue, source]
+#  downloads: [pdf, epub]
+  sharing: [twitter, facebook, linkedin]
+  # sidebar:
+  #   style: docked
+  #   background: light
+  page-footer:
+    left: "CC-BY 2022"
+    right:
+      - icon: github
+        href: https://github.com/code-check-club/code-check-guide
+
+
+bibliography: include/book.bib
+csl: include/apa.csl
+
+format:
+  html:
+    theme:
+      light:
+      - yeti
+      - include/light.scss
+      dark:
+      - darkly
+      - include/dark.scss
+    code-link: true
+    code-fold: true
+    code-line-numbers: true
+    code-overflow: wrap
+    code-copy: true
+    # code-block-border-left: "#4864DB"
+    highlight-style: a11y
+    # monofont: Fira Code
+    # mainfont: Open Sans
+    css: include/style.css
+    include-after-body: include/script.js
+  pdf:
+    documentclass: scrreprt
+    include-in-header: include/preamble.tex
+  epub: default
+
+
+
