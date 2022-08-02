@@ -1,0 +1,16 @@
+Package: code-review-guide
+Title: Guide to Reviewing Code
+Version: 0.0.0.9000
+Description: Guide to Reviewing Code
+License: CC BY 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.0
+Imports: 
+    knitr,
+    rmarkdown,
+    R.utils,
+    DT,
+    kableExtra,
+    quarto
+
