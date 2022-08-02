@@ -1,30 +1,36 @@
 project:
   type: book
   output-dir: docs
-  output-file: "code-check-guide"
+  output-file: "code-review-guide"
   resources:
   - "images/*"
   - "data/*"
 
 book:
-  title: "Code Check Guide"
-  author: "Code Check Guide Collective"
-  description: "Beguinners' guide to checking code and preparing your code to be checked"
+  title: "Code Review Guide"
+  author: "Code Check Collective"
+  #description: "Beginners' guide to checking code and preparing your code to be checked"
   chapters:
     - index.qmd
+    - part: "Checklists"
+      chapters:
+      - checklist-coder.qmd
+      - checklist-reviewer.qmd
     - part: "Topics"
       chapters:
       - naming.qmd
       - comments.qmd
       - unit-tests.qmd
-    - part: "Checklists"
-      chapters:
-      - checklist-coder.qmd
-      - checklist-reviewer.qmd
     - discussion.qmd
+  appendices:
+    - references.qmd
+    - contributors.qmd
+  sidebar:
+    logo: images/code-review-guide.png
+    footer: "*NOTE: This guide is in draft format. We will be working over the next few months to generate text.*"
   cover-image: images/code-review-guide.png
   image: images/code-review-guide.png
-  fav-icon: images/logos/favicon.ico
+  fav-icon: images/favicon.ico
   #cookie-consent: true
   #google-analytics: "G-6NP3MF25W3"
   page-navigation: true
@@ -33,19 +39,19 @@ book:
     hypothesis:
       theme: clean
       openSidebar: false
-  repo-url: https://github.com/code-check-club/code-check-guide
+  site-url: https://code-check-club.github.io/code-review-guide/
+  repo-url: https://github.com/code-check-club/code-review-guide
   repo-branch: master
   repo-actions: [edit, issue, source]
 #  downloads: [pdf, epub]
   sharing: [twitter, facebook, linkedin]
-  # sidebar:
-  #   style: docked
-  #   background: light
+  open-graph: true
+  twitter-card: true
   page-footer:
     left: "CC-BY 2022"
     right:
       - icon: github
-        href: https://github.com/code-check-club/code-check-guide
+        href: https://github.com/code-check-club/code-review-guide
 
 
 bibliography: include/book.bib
@@ -58,8 +64,9 @@ format:
       - darkly
       - include/dark.scss
       light:
-      - yeti
+      - flatly
       - include/light.scss
+    toc-depth: 4
     code-link: true
     code-fold: true
     code-line-numbers: true

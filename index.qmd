@@ -11,12 +11,12 @@ knitr::write_bib(c(
 source("R/setup.R")
 ```
 
+
 ## What is code check?
 
 ### Why is it important?
 
 - Reproducibility checks
-- Ensure the correct analysis is conducted and follows methodology
 - Everyone will inevitably make mistakes. We should have a system to catch them
 
 ### Why don't people do it?
@@ -42,7 +42,7 @@ source("R/setup.R")
 
 ### Expertise
 
-- Novice to intermediate experience with research code (you should at least be able to write an analysis script in the language you’re checking)
+- Novice to intermediate experience with research code (you should at least be able to write an analysis script in the language you're checking)
 - Mainly end users, no assumption of a computer science background
 - No assumption that you know git/github
 - Coding language agnostic (but examples in R and python?)
@@ -100,3 +100,7 @@ Do not rely on code check to assess the appropriateness of your scientific decis
 - We won’t focus much on the last one, as it requires stats/domain knowledge
 
 ## How to use this guide
+
+You can go through the Checklists for different situations. Each step is linked to further explanation in the Topics section is a step is unfamiliar to you.
+
+
