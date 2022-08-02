@@ -71,10 +71,7 @@ format:
     # mainfont: Open Sans
     css: include/style.css
     include-after-body: include/script.js
-  pdf:
-    documentclass: scrreprt
-    include-in-header: include/preamble.tex
-  epub: default
+
 
 
 
